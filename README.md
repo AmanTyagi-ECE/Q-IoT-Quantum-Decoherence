@@ -86,7 +86,7 @@ To duplicate the physical Hardware-in-the-Loop (HIL) setup, wire the components 
 | Physical Component | Component Pin | ESP32 Target GPIO | Signal Type / Notes |
 | :--- | :--- | :--- | :--- |
 | **DHT11 Climate Sensor** | VCC / GND | 3.3V / GND | Main Power Lines |
-| **DHT11 Climate Sensor** | DATA | GPIO 23 | Digital Data Input |
+| **DHT11 Climate Sensor** | DATA | GPIO 4  | Digital Data Input |
 | **SSD1306 OLED Screen** | VCC / GND | 3.3V / GND | Main Power Lines |
 | **SSD1306 OLED Screen** | SCL (Clock) | GPIO 22 | I2C Hardware Bus |
 | **SSD1306 OLED Screen** | SDA (Data) | GPIO 21 | I2C Hardware Bus |
