@@ -79,16 +79,6 @@ This folder contains the code that runs on the physical device and the code that
   * `esp32_firmware.ino` - The C++ code uploaded to the ESP32 to handle Wi-Fi, sensors, and the encryption math.
   * `cloud_decryption.m` - The MATLAB script running on ThingSpeak that handles the decryption and automated graphing.
 
-## Cyber-Physical Threat Model & Security Architecture
-
-This system was evaluated against standard IoT attack vectors to verify the cryptographic resilience of the quantum-assisted pipeline.
-
-| Attack Vector | Conventional IoT Vulnerability | Q-IoT Pipeline Mitigation |
-| :--- | :--- | :--- |
-| **Man-in-the-Middle (MitM) Interception** | Attackers sniff network traffic to read unencrypted or poorly encrypted sensor payloads. | **Complete Mitigation:** Data is encrypted at the hardware level using a one-time bitwise cipher before network transmission. Intercepted payloads appear as high-entropy hexadecimal static. |
-| **Replay & Keystream Attacks** | Attackers capture valid encrypted packets and resend them later to forge data or guess static keys. | **Complete Mitigation:** The Qiskit middleware generates dynamic, single-use keys on-demand. Because keys change every 30 seconds, a captured keystream cannot be reused to decrypt future payloads. |
-| **Pseudo-Random Number Prediction** | Attackers reverse-engineer software algorithms (PRNGs) to predict future encryption keys. | **Theoretical Mitigation:** Key generation relies on true quantum wave function collapse modeled in Qiskit, producing non-deterministic entropy that cannot be predicted mathematically. |
-
 ## Tech Stack
 * **Language:** Python, C++, MATLAB
 * **Quantum Framework:** IBM Qiskit (`qiskit`, `qiskit_aer`)
