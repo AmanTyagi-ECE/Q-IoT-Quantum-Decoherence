@@ -79,6 +79,18 @@ This folder contains the code that runs on the physical device and the code that
   * `esp32_firmware.ino` - The C++ code uploaded to the ESP32 to handle Wi-Fi, sensors, and the encryption math.
   * `cloud_decryption.m` - The MATLAB script running on ThingSpeak that handles the decryption and automated graphing.
 
+## Hardware Circuit & Connection Map
+
+To duplicate the physical Hardware-in-the-Loop (HIL) setup, wire the components to the ESP32 development board according to this direct pinout configuration:
+
+| Physical Component | Component Pin | ESP32 Target GPIO | Signal Type / Notes |
+| :--- | :--- | :--- | :--- |
+| **DHT11 Climate Sensor** | VCC / GND | 3.3V / GND | Main Power Lines |
+| **DHT11 Climate Sensor** | DATA | GPIO 23 | Digital Data Input |
+| **SSD1306 OLED Screen** | VCC / GND | 3.3V / GND | Main Power Lines |
+| **SSD1306 OLED Screen** | SCL (Clock) | GPIO 22 | I2C Hardware Bus |
+| **SSD1306 OLED Screen** | SDA (Data) | GPIO 21 | I2C Hardware Bus |
+
 ## Tech Stack
 * **Language:** Python, C++, MATLAB
 * **Quantum Framework:** IBM Qiskit (`qiskit`, `qiskit_aer`)
