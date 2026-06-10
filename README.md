@@ -5,7 +5,7 @@ The integration of Quantum Key Distribution (QKD) into Internet of Things (IoT) 
 
 This repository documents the end-to-end engineering journey of evaluating and mitigating the degradation of quantum entanglement under simulated atmospheric interference, and eventually applying these models to physical IoT hardware.
 
-## Quantum Simulation & Mathematical Analysis (Completed)
+## Quantum Simulation & Mathematical Analysis
 I utilized Python and the IBM Qiskit framework to generate an ideal $|\Phi^+\rangle$ Bell State and subject it to simulated wireless transmission. By mapping physical transmission distance (0 to 100 meters) to noise probability factors (0.0 to 1.0), the study mathematically tracked Decoherence through the extraction of quantum density matrices.
 
 ### Key Findings
@@ -35,7 +35,7 @@ The codebase was developed iteratively to document the raw engineering process, 
   * `5.noise models comparison.ipynb` - Final model comparison and comparative graphs.
   * `combined_simulation_code.ipynb` - A refactored, single-script execution of the entire simulation pipeline.
     
-## Quantum Key Extraction & Middleware Networking (Completed)
+## Quantum Key Extraction & Middleware Networking
 I transitioned the theoretical Qiskit mathematical models into a functional, network-accessible cryptographic API to bridge the gap between simulation and physical hardware.
 
 ### Key Findings
