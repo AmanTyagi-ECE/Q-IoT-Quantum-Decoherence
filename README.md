@@ -1,4 +1,4 @@
-# Quantum-Secured IoT (Q-IoT): Wireless Entanglement Simulation
+# Quantum-Secured IoT (Q-IoT) Telemetry Pipeline
 
 ## Project Overview
 The integration of Quantum Key Distribution (QKD) into Internet of Things (IoT) networks offers theoretically unbreakable cryptographic security. However, physical implementation is severely hindered by the fragility of quantum states transmitted over noisy wireless channels. 
