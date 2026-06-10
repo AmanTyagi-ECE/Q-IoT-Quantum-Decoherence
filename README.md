@@ -20,8 +20,8 @@ The graphs below illustrate the fatal impact of atmospheric interference on the 
 
 <table>
   <tr>
-    <td><img src="Simulation/graphs/fidelity_degredation_over_wireless_channels(comparison).png" alt="Quantum Fidelity" width="100%"/></td>
-    <td><img src="Simulation/graphs/concurrence_degradation_over_wireless_channel(comparison).png" alt="Concurrence" width="100%"/></td>
+    <td><img src="simulation/graphs/fidelity_degredation_over_wireless_channels(comparison).png" alt="Quantum Fidelity" width="100%"/></td>
+    <td><img src="simulation/graphs/concurrence_degradation_over_wireless_channel(comparison).png" alt="Concurrence" width="100%"/></td>
   </tr>
 </table>
 
@@ -67,7 +67,7 @@ The graphics below illustrate the live end-to-end cryptographic deployment state
 
 | Field 1: Encrypted Ciphertext Payload | Field 2: Dynamically Decrypted Temperature | Field 3: Collected Quantum Key Stream |
 | :---: | :---: | :---: |
-| ![Ciphertext]("Hardware-in-loop & Data Encryption/dashboard/field1_encrypted.png") | ![Decrypted Data](Hardware-in-loop & Data Encryption/dashboard/field2_decrypted.png) | ![Quantum Key](Hardware-in-loop & Data Encryption/dashboard/field3_quantumkey.png) |
+| ![Ciphertext]("hardware in the loop and encryption\dashboard\field1_encrypted.png") | ![Decrypted Data](Hardware-in-loop & Data Encryption/dashboard/field2_decrypted.png) | ![Quantum Key](Hardware-in-loop & Data Encryption/dashboard/field3_quantumkey.png) |
 
 ### Hardware & Encryption Repository Structure
 This folder contains the code that runs on the physical device and the code that runs in the cloud.
