@@ -65,9 +65,13 @@ I integrated the theoretical quantum backend with physical edge hardware and eng
 ### Live Dashboard Results
 The graphics below illustrate the live end-to-end cryptographic deployment state on ThingSpeak. The raw ciphertext stream shows extreme, secure scattering, while the automated MATLAB decryption engine simultaneously recovers the smooth, linear real-world ambient room temperature:
 
-| Field 1: Encrypted Ciphertext Payload | Field 2: Dynamically Decrypted Temperature | Field 3: Collected Quantum Key Stream |
-| :---: | :---: | :---: |
-| ![Ciphertext]("hardware in the loop and encryption\dashboard\field1_encrypted.png") | ![Decrypted Data](Hardware-in-loop & Data Encryption/dashboard/field2_decrypted.png) | ![Quantum Key](Hardware-in-loop & Data Encryption/dashboard/field3_quantumkey.png) |
+<table>
+  <tr>
+    <td><img src="hardware%20in%20the%20loop%20and%20encryption/dashboard/field1_encrypted.png" alt="Field 1 Encrypted Data" width="100%"/></td>
+    <td><img src="hardware%20in%20the%20loop%20and%20encryption/dashboard/field2_decrypted.png" alt="Field 2 Decrypted Temperature" width="100%"/></td>
+    <td><img src="hardware%20in%20the%20loop%20and%20encryption/dashboard/field3_quantumkey.png" alt="Field 3 Quantum Key" width="100%"/></td>
+  </tr>
+</table>
 
 ### Hardware & Encryption Repository Structure
 This folder contains the code that runs on the physical device and the code that runs in the cloud.
