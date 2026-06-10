@@ -43,7 +43,7 @@ I transitioned the theoretical Qiskit mathematical models into a functional, net
 * **Flask API Middleware:** Engineered a lightweight local web server (`app.py`) to act as the translation bridge between the Python quantum simulation and the physical C++ hardware.
 * **Network Delivery:** Configured the server to listen on `0.0.0.0` and serialized the quantum key into a universal JSON payload, allowing edge devices to request on-demand keys over the local Wi-Fi network via the `/get_key` endpoint.
 
-##  Quantum Key Extraction and Flask Server Repository Structure
+### Quantum Key Extraction and Flask Server Repository Structure
 This module contains the functional network server and the quantum extraction script.
 * `quantum_key_generator.py` - Connects to IBM Qiskit `aer_simulator` to collapse the wave function and isolate a single classical bit string.
  * `app.py` - The Flask web server that routes the network requests and packages the output into JSON.
