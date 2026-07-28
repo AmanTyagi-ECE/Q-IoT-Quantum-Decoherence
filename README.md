@@ -6,7 +6,7 @@ The integration of Quantum Key Distribution (QKD) into Internet of Things (IoT) 
 This repository documents the end-to-end engineering journey of evaluating and mitigating the degradation of quantum entanglement under simulated atmospheric interference, and eventually applying these models to physical IoT hardware.
 
 ## Quantum Simulation & Mathematical Analysis
-We utilized Python and the IBM Qiskit framework to generate an ideal $|\Phi^+\rangle$ Bell State and subject it to simulated wireless transmission. By mapping physical transmission distance (0 to 100 meters) to noise probability factors (0.0 to 1.0), the study mathematically tracked Decoherence through the extraction of quantum density matrices.
+I utilized Python and the IBM Qiskit framework to generate an ideal $|\Phi^+\rangle$ Bell State and subject it to simulated wireless transmission. By mapping physical transmission distance (0 to 100 meters) to noise probability factors (0.0 to 1.0), the study mathematically tracked Decoherence through the extraction of quantum density matrices.
 
 ### Key Findings
 * **Noise Modeling:** Compared Depolarizing Noise (random atmospheric scrambling) against Amplitude Damping (photon energy loss).
@@ -36,7 +36,7 @@ The codebase was developed iteratively to document the raw engineering process, 
   * `combined_simulation_code.ipynb` - A refactored, single-script execution of the entire simulation pipeline.
     
 ## Quantum Key Extraction & Middleware Networking
-We transitioned the theoretical Qiskit mathematical models into a functional, network-accessible cryptographic API to bridge the gap between simulation and physical hardware.
+I transitioned the theoretical Qiskit mathematical models into a functional, network-accessible cryptographic API to bridge the gap between simulation and physical hardware.
 
 ### Key Findings
 * **Wave Function Collapse:** Added measurement gates and executed single-shot simulations (`shots=1`) to force the quantum superposition to collapse into a definitive classical bit string (e.g., `00` or `11`).
@@ -49,7 +49,7 @@ This module contains the functional network server and the quantum extraction sc
  * `app.py` - The Flask web server that routes the network requests and packages the output into JSON.
 
 ## Hardware-in-the-Loop Integration & Cloud Encryption
-We integrated the theoretical quantum backend with physical edge hardware and engineered an automated cloud telemetry pipeline to create a fully operational, end-to-end cyber-physical system.
+I integrated the theoretical quantum backend with physical edge hardware and engineered an automated cloud telemetry pipeline to create a fully operational, end-to-end cyber-physical system.
 
 ### How It Works 
 1. **Sensing the Environment (The Edge Node):** An ESP32 microcontroller reads the physical room temperature using a DHT11 sensor.
